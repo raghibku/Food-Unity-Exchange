@@ -1,0 +1,99 @@
+Project: Community Food Sharing and Surplus Reduction Platform
+
+layout: navbar content footer
+###pages
+1.Home
+2.Available Foods
+3.Add Food
+4.Manage My Foods
+5. My Food Request 
+6.Login
+7.SignUp
+8.View Detail Page
+9.Manage Single Food Page
+10.Add Food
+11.Update Food
+12.not found page(jpg and go home)
+
+
+# footer(logo,name,copyright notice,contact info social media links ,address +..)
+
+# navbar(siteName , logo , Home , Available Foods , Add Food (private) , Manage My Foods(private) , My Food Request (private) , Login/SignUp)
+
+# prev login/signup
+
+###Homepage:
+1.banner
+2.Featured Foods
+3.two extra sections
+
+##database collections:
+	1.All Foods
+	2.Food Requests->requester name,image,email,req time&date status
+
+## infos->Food (image,name,id) , Donor(image,name,email) , Food Quantity , pickup location , Expired Date , Additional notes 
+
+#featured Foods: 6 items with highest quantity will be shown
+Food (image,name) , Donor(image,name) , Food Quantity , pickup location , Expired Date , Additional notes , View detail button(private) ,show all button ->Available foods Page
+
+
+###Available Foods Page
+
+#filter option: Search Functionality by the food name
+#sorting option: sort by food expire date
+#Foods Section:Food (image,name) , Donor(image,name) , Food Quantity , pickup location , Expired Date , Additional notes , View detail button(private)
+
+
+###Single Food Details Page
+# Food (image,name) , Quantity , Expired Date , Request Button->modal
+modal->Food(name ,image ,id, donor Email,donor Name, *user email*(logged in user),*request date(current time)*, pickup location , Expire Date, Additional Note(@@editable), Donation Money(@@editable), request button-->add requested food into the database food req collection ) 
+
+
+##Add a food Page
+
+#form:
+Food(name,image,quantity) ,pickup, expiredDate , AdditionalNotes , Donator(image,name,email) from Logged in user,FoodStatus(def:available),Add Button
+
+##Manage My Foods
+#show foods donated by logged in user in a tabular format(react-table),edit ,delete,manage
+
+actions:-
+update: go to update route->update food info
+delete: delete food(after confirmation)
+manage: Manage single food route(/manage/:id)->
+
+
+manage button(id)-> manageSinglefoodPage(load data from requested-foods-db with food id) ->show data->deliver button->
+change status in requested foods ('delivered)
+change status in all foods ('not available')
+
+##Manage Single Food:
+info: requester name,image,email,req time&date status(pending->deliver button->onclick(delivered))
+
+action: request status(pending to delivered)->no user can see the food
+
+
+##My Food Request
+will contain all the food req by the logged in user
+info: donar name ,pickup ,expiry,reqDate,YourDonation Amount,Status(available/delivered),cancelReqButton->remove item from food req collection(if status is available)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

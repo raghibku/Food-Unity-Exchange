@@ -1,0 +1,110 @@
+[
+    {
+        "foodImage": "https://source.unsplash.com/a-bowl-of-rice-meat-and-vegetables-with-a-glass-of-wine--LDSPh7mzyo",
+        "foodName": "Fried Rice and Chicken",
+        "foodQuantity": "5",
+        "donorName": "cat",
+        "donorImage": "https://source.unsplash.com/white-butterfly-resting-on-cats-nose-rW-I87aPY5Y",
+        "donorEmail": "cat@gmail.com",
+        "pickupLocation": "sos hermann gmeiner college,mirpur 13,dhaka",
+        "expireDate": "2023-12-25",
+        "additionalNote": "We had some extra",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/pizza-with-cheese-and-green-leaf-a66sGfOnnqQ",
+        "foodName": "Vegetarian Pizza",
+        "foodQuantity": "3",
+        "donorName": "cat",
+        "donorImage": "https://source.unsplash.com/white-butterfly-resting-on-cats-nose-rW-I87aPY5Y",
+        "donorEmail": "cat@gmail.com",
+        "pickupLocation": "123 Main Street, Anytown",
+        "expireDate": "2023-11-30",
+        "additionalNote": "Leftover from our family gathering. Enjoy a cheesy delight!",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/chocolate-cake-kPxsqUGneXQ",
+        "foodName": "Chocolate Cake",
+        "foodQuantity": "1",
+        "donorName": "cat",
+        "donorImage": "https://source.unsplash.com/white-butterfly-resting-on-cats-nose-rW-I87aPY5Y",
+        "donorEmail": "cat@gmail.com",
+        "pickupLocation": "456 Elm Street, Somewhereville",
+        "expireDate": "2023-12-10",
+        "additionalNote": "A decadent chocolate cake perfect for special occasions!",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/bowl-of-sliced-fruits-on-white-textile-_Zn_7FzoL1w",
+        "foodName": "Fresh Fruit Salad",
+        "foodQuantity": "2",
+        "donorName": "rabbit",
+        "donorImage": "https://source.unsplash.com/white-rabbit-on-green-grass-u_kMWN-BWyU",
+        "donorEmail": "rabbit@gmail.com",
+        "pickupLocation": "789 Oak Avenue, Woodsville",
+        "expireDate": "2023-12-15",
+        "additionalNote": "Enjoy a healthy and refreshing fruit salad!",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/spaghetti-on-white-ceramic-plate-sA3wymYqyaI",
+        "foodName": "Spaghetti Bolognese",
+        "foodQuantity": "4",
+        "donorName": "sana",
+        "donorImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "donorEmail": "sana@gmail.com",
+        "pickupLocation": "567 Pine Road, Greensboro",
+        "expireDate": "2023-11-28",
+        "additionalNote": "A hearty plate of spaghetti with a savory meat sauce.",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/pepperoni-pizza-on-a-wooden-tray-w1iMfs6yxuo",
+        "foodName": "Pepperoni Pizza",
+        "foodQuantity": "3",
+        "donorName": "sana",
+        "donorImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "donorEmail": "sana@gmail.com",
+        "pickupLocation": "123 Main Street, Pizza City",
+        "expireDate": "2023-11-30",
+        "additionalNote": "Delicious pepperoni pizza with extra cheese.",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/a-wooden-tray-topped-with-two-sandwiches-and-fries-GU38N9EauNA",
+        "foodName": "Classic Burger",
+        "foodQuantity": "5",
+        "donorName": "sana",
+        "donorImage": "https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk",
+        "donorEmail": "sana@gmail.com",
+        "pickupLocation": "789 Oak Avenue, Burger Town",
+        "expireDate": "2023-11-25",
+        "additionalNote": "A juicy classic burger with all the fixings.",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/mexican-cochinita-pibil-tacos-with-habanero-sauce-traditional-food-in-yucatan-mexico-5EPIjZkv87o",
+        "foodName": "Taco Platter",
+        "foodQuantity": "2",
+        "donorName": "noyon",
+        "donorImage": "https://source.unsplash.com/man-wearing-black-framed-sunglasses-mjRwhvqEC0U",
+        "donorEmail": "noyon@gmail.com",
+        "pickupLocation": "456 Elm Street, Taco Village",
+        "expireDate": "2023-12-02",
+        "additionalNote": "A tasty taco platter with various fillings.",
+        "foodStatus": "available"
+    },
+    {
+        "foodImage": "https://source.unsplash.com/sushi-on-black-ceramic-plate-iOHJKJqO6E0",
+        "foodName": "Sushi Combo",
+        "foodQuantity": "6",
+        "donorName": "noyon",
+        "donorImage": "https://source.unsplash.com/man-wearing-black-framed-sunglasses-mjRwhvqEC0U",
+        "donorEmail": "noyon@gmail.com",
+        "pickupLocation": "234 Maple Drive, Sushi City",
+        "expireDate": "2023-11-29",
+        "additionalNote": "An assorted sushi combo with fresh ingredients.",
+        "foodStatus": "available"
+    }
+]
