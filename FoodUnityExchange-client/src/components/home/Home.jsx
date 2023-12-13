@@ -4,6 +4,7 @@ import Banner from './Banner'
 import FeaturedFoods from './FeaturedFoods'
 import Testimonials from './Testimonials'
 import FAQ from './FAQ'
+import BannerSlider from './BannerSlider';
 
 const Home = () => {
   return (
@@ -12,10 +13,10 @@ const Home = () => {
         <title>Food Unity Exchange | Home</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
-      <Banner />
+      <BannerSlider />
       <FeaturedFoods />
       <Testimonials />
-      <FAQ />
+      {/* <FAQ /> */}
     </div>
   )
 }

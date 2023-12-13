@@ -67,7 +67,7 @@ const AddFood = () => {
         <title>Food Unity Exchange | Add Food</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
-        <h1 className='text-5xl font-bold text-primary text-center my-8'>Add Food</h1>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center my-8'>Add Food</h1>
         <form onSubmit={handleAddFood} className="flex flex-col gap-2 text-xl w-full md:w-2/3">
           {/* food */}
 

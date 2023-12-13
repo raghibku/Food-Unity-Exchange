@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Helmet } from "react-helmet";
 import { AuthContext } from '../../provider/AuthProvider'
 import { useLoaderData } from 'react-router-dom';
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,7 +10,7 @@ const FoodDetail = () => {
     const { user, loading } = useContext(AuthContext);
     const food = useLoaderData();
     const date = new Date();
-    const buttonStyle = user? "btn btn-primary":'hidden';
+    const buttonStyle = user ? "btn btn-primary" : 'hidden';
     const handleRequest = event => {
         event.preventDefault();
 
@@ -63,14 +64,14 @@ const FoodDetail = () => {
                 if (data.insertedId) {
                     toast.success('Request successfull', {
                         position: 'top-right',
-                        autoClose: 3000, 
+                        autoClose: 3000,
                         hideProgressBar: false,
                         closeOnClick: true,
                         pauseOnHover: true,
                         draggable: true,
                         progress: undefined,
                         theme: "dark",
-                      })
+                    })
                 }
             })
     }
@@ -80,7 +81,7 @@ const FoodDetail = () => {
                 <title>Food Unity Exchange | Food Detail</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-            <h1 className='text-5xl font-bold text-primary text-center my-8'>Food Detail</h1>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center my-8'>Food Detail</h1>
             <div className='flex flex-col justify-around items-start gap-2'>
                 <img src={food.foodImage} className='w-2/3 md:w-[600px] ' alt="" />
                 <h1 className='text-2xl font-semibold'>
@@ -93,8 +94,17 @@ const FoodDetail = () => {
                     <h1 className='text-lg '>Expire Date: {food.expireDate}</h1>
 
                 </div>
+                <div className='flex justify-around items-center w-full'>
+                    <button className={buttonStyle} onClick={() => document.getElementById('my_modal_5').showModal()}>Request Food</button>
 
-                <button className={buttonStyle} onClick={() => document.getElementById('my_modal_5').showModal()}>Request Food</button>
+                    <FacebookShareButton
+                        url={`https://foodunityexchange.web.app/food-detail/${food._id}`}
+                        quote={'This is surplus food! If anyone need it let me know'}
+                        hashtag="#FUE"
+                    >
+                        <FacebookIcon size={32} round />
+                    </FacebookShareButton>
+                </div>
                 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
 
                     <div className="modal-box">
@@ -124,7 +134,7 @@ const FoodDetail = () => {
                             Additional Note:<input className="my-2 border p-2 rounded-lg text-gray-600" type="text" placeholder="Additional Note" name="note" />
                             Donation Amount:<input className="my-2 border p-2 rounded-lg text-gray-600" type="text" placeholder="Donation Amount" name="amount" />
 
-                            <button className= "btn btn-primary" type="submit">Request</button>
+                            <button className="btn btn-primary" type="submit">Request</button>
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
                                 <button className="btn">Close</button>

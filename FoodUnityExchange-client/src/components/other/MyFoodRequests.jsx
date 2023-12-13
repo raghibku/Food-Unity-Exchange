@@ -64,7 +64,7 @@ const MyFoodRequests = () => {
           <title>Food Unity Exchange | My Food Request</title>
           <meta name="description" content="Helmet application" />
         </Helmet>
-        <h1 className='text-5xl font-bold text-primary text-center my-8'>My Food Requests</h1>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center my-8'>My Food Requests</h1>
         <div className="overflow-x-auto w-full">
           <table className="table w-full">
             {/* head */}

@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ManageSingleFood = () => {
     const food = useLoaderData();
-    const buttonClasses = (food ) ? 'btn btn-accent' : 'hidden'
+    const buttonClasses = (food) ? 'btn btn-accent btn-sm md:btn-md' : 'hidden'
     const msgClass = food ? 'hidden' : 'text-lg text-center'
     console.log(food);
     const [status, setStatus] = useState(food.status)
@@ -26,14 +26,14 @@ const ManageSingleFood = () => {
                 setStatus('delivered');
                 toast.success('Delivery successfull', {
                     position: 'top-right',
-                    autoClose: 3000, 
+                    autoClose: 3000,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
                     theme: "dark",
-                  })
+                })
             })
         //change status in all foods ('not available')
         fetch(`https://food-unity-exchange-server.vercel.app/availableFoodStatus/${id}`, {
@@ -55,7 +55,7 @@ const ManageSingleFood = () => {
                 <title>Food Unity Exchange | Manage Food Request</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-            <h1 className='text-5xl font-bold text-primary text-center my-8'>Manage {food.foodName} Request</h1>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center my-8'>Manage {food.foodName} Request</h1>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
@@ -90,34 +90,37 @@ const ManageSingleFood = () => {
 
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         {
                             <tr>
                                 <td>
-                                    <h1 className='text-2xl font-bold'>{food?food.requesterName:'no request'}</h1>
+                                    <h1 className='text-2xl font-bold'>{food ? food.requesterName : 'no request'}</h1>
                                 </td>
                                 <td>
                                     <img src={food.requesterImage} className='h-[60px]' alt="" />
                                 </td>
                                 <td>
-                                    <h1 className='text-2xl font-bold'>{food.requesterEmail}</h1>
+                                    <h1 className='text-md lg:text-2xl font-bold'>{food.requesterEmail}</h1>
                                 </td>
                                 <td>
-                                    <h1 className='text-2xl font-bold'>{food.requestDate}</h1>
+                                    <h1 className='text-md lg:text-2xl font-bold'>{food.requestDate}</h1>
                                 </td>
                                 <td>
-                                    <h1 className='text-2xl font-bold'>{food.requestTime}</h1>
+                                    <h1 className='text-md lg:text-2xl font-bold'>{food.requestTime}</h1>
                                 </td>
                                 <td>
-                                    <h1 className='text-2xl font-bold'>{status}</h1>
+                                    <h1 className='text-md lg:text-2xl font-bold'>{status}</h1>
                                 </td>
 
-                                <th>
-                                    <button className={buttonClasses} onClick={() => { handleDeliver(food.foodId) }}>
-                                        Deliver
-                                    </button>
-                                </th>
+                                {
+                                    status !=='delivered' &&
+                                    <th>
+                                        <button className={buttonClasses} onClick={() => { handleDeliver(food.foodId) }}>
+                                            Deliver
+                                        </button>
+                                    </th>
+                                }
 
                             </tr>
 
@@ -127,7 +130,7 @@ const ManageSingleFood = () => {
 
                 </table>
             </div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     )
 }

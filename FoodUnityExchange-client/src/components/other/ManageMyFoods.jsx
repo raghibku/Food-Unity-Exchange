@@ -64,7 +64,7 @@ const ManageMyFoods = () => {
         <title>Food Unity Exchange | Manage Food</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
-      <h1 className='text-5xl font-bold text-primary text-center my-8'>Manage Food</h1>
+      <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center my-8'>Manage Food</h1>
 
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
@@ -97,20 +97,20 @@ const ManageMyFoods = () => {
                   return (
                     <tr>
                       <td>
-                        <h1 className='text-2xl font-bold'>{food.foodName}</h1>
+                        <h1 className='text-md lg:text-2xl font-bold'>{food.foodName}</h1>
                       </td>
                       <th>
-                        <button className='btn btn-primary' onClick={() => navigate(`/update-food/${food._id}`)}>
+                        <button className='btn btn-primary btn-sm md:btn-md ' onClick={() => navigate(`/update-food/${food._id}`)}>
                           Update
                         </button>
                       </th>
                       <th>
-                        <button onClick={()=>{handleDelete(food._id)}} className='btn btn-secondary'>
+                        <button onClick={()=>{handleDelete(food._id)}} className='btn btn-secondary btn-sm md:btn-md'>
                           Delete
                         </button>
                       </th>
                       <th>
-                        <button className='btn btn-accent' onClick={() => navigate(`/manage-food/${food._id}`)}>
+                        <button className='btn btn-accent btn-sm md:btn-md' onClick={() => navigate(`/manage-food/${food._id}`)}>
                           Manage
                         </button>
                       </th>

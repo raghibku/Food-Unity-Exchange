@@ -28,7 +28,7 @@ const RequestedFoodRow = ({ food , handleCancelRequest}) => {
             <td>{amount}TK</td>
             <td>{status}</td>
             <td>
-                <button onClick={()=>handleCancelRequest(_id)} className=" btn btn-secondary">
+                <button onClick={()=>handleCancelRequest(_id)} className=" btn btn-secondary btn-sm md:btn-md">
                     Cancel
                 </button>
             </td>

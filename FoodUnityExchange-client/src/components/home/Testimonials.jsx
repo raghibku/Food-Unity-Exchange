@@ -3,8 +3,8 @@ import React from 'react'
 const Testimonials = () => {
     return (
         <div name="testimonials" className='flex flex-col justify-center items-center my-8 min-h-screen'>
-            <h1 className='text-5xl font-bold text-primary text-center'>Customer Reviews</h1>
-            <h2 className='text-2xl font-bold  text-center py-6'>What our Customers are saying</h2>
+            <h1 className='text-5xl font-bold text-primary text-center font-serif my-10'>Community Reviews</h1>
+            <h2 className='text-2xl font-bold  text-center pb-6'>Some thoughts from community members</h2>
             <div className='flex justify-center items-center'>
                 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
